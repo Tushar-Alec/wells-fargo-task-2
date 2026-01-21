@@ -31,7 +31,8 @@ public class Client {
 
     }
 
-    public Client(String firstName, String lastName, String address, String phone, String email) {
+    public Client(Advisor advisor,String firstName, String lastName, String address, String phone, String email) {
+        this.advisor = advisor;
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;

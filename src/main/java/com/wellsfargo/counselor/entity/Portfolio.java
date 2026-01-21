@@ -20,7 +20,8 @@ public class Portfolio {
     }
 
 
-    public Portfolio(LocalDateTime creationDate) {
+    public Portfolio(LocalDateTime creationDate, Client client) {
+        this.client = client;
         this.creationDate = creationDate;
     }
 
