@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 public class Client {
     @Id
     @GeneratedValue()
-    private long clientId;
+    private Long clientId;
 
     @ManyToOne
     @JoinColumn(name = "advisorId")
@@ -24,7 +24,7 @@ public class Client {
     @Column(nullable = false)
     private String phone;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String email;
 
     protected Client() {

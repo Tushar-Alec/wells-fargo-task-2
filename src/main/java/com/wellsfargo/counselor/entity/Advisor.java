@@ -25,7 +25,7 @@ public class Advisor {
     @Column(nullable = false)
     private String phone;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String email;
 
     protected Advisor() {
